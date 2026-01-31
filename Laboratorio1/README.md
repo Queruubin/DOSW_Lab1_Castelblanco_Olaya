@@ -1,19 +1,19 @@
 # Maratón Git 2026-1
 
 ## Integrantes
-- Nombre completo 1  
-- Nombre completo 2  
+- Samuel Felipe Castelblanco Tellez
+- Tomas Olaya Diaz
 
 ---
 
 ## Retos completados
 
-### Reto 1: Configuración y creación de rama  
+### RETO #1: La Bienvenida
 **Evidencia:**  
-Captura de imagen  
+![Captura](reto1/Reto1.png)
 
 **Descripción:**  
-Breve explicación del proceso realizado para configurar el repositorio y crear una nueva rama.
+Se resolvio el reto 1 por medio de una fucnio lamda la cual impreme los nombres que se pasan anteriormente en una list
 
 ---
 
