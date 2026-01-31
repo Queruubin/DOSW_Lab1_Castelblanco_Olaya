@@ -1,5 +1,5 @@
 package Laboratorio1.reto2;
 
-public class Reto2 {
+public class CarreraParalela {
     // Todo; hoola
 }
