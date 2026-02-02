@@ -6,35 +6,35 @@ import java.util.stream.Collectors;
 
 public class Reto1 {
 
-    // Clase interna Estudiante (Requisito del PDF)
     static class Estudiante {
         String nombre;
-        String correo;
-        int edad;
         int semestre;
+        int edad;
+        String correo;
 
-        public Estudiante(String nombre, String correo, int edad, int semestre) {
+        public Estudiante(String nombre, int semestre, int edad, String correo) {
             this.nombre = nombre;
-            this.correo = correo;
-            this.edad = edad;
             this.semestre = semestre;
+            this.edad = edad;
+            this.correo = correo;
         }
     }
 
     public static void main(String[] args) {
-        // 1. Crear la lista de estudiantes (Requisito: List)
         List<Estudiante> estudiantes = Arrays.asList(
-            new Estudiante("Tomas Olaya", "tomas.olaya@mail.escuelaing.edu.co", 20, 6), // TODO: Pon tus datos reales
-            new Estudiante("Samuel Casteblanco", "samuel.casteblanco@mail.escuelaing.edu.co", 20, 6) // TODO: Pon datos de Samuel
+            new Estudiante("Samuel Castelblanco", 5, 20, "samuel.casteblanco@mail.escuelaing.edu.co"),
+            new Estudiante("Tomas Olaya", 5, 20, "tomas.olaya-d@mail.escuelaing.edu.co")
         );
+        
+        String nombresYEdades = estudiantes.stream()
+            .map(e -> e.nombre + ", estudiante de la escuela de " + e.semestre + ".° semestre de " + e.edad + " años")
+            .collect(Collectors.joining(", y "));
 
-        // 2. Usar stream, map y collect para generar el mensaje (Requisito: Lambdas)
-        String mensajeFinal = estudiantes.stream()
-            .map(e -> "Hola, somos " + e.nombre + " del semestre " + e.semestre) // Esto es una Lambda simple
+        String correos = estudiantes.stream()
+            .map(e -> e.correo)
             .collect(Collectors.joining(" y "));
 
-        // TODO: Ajusta el .map() de arriba para que el mensaje quede EXACTO al ejemplo del PDF:
-        // "Nosotros somos la pareja conformada por [Nombre], estudiante de [Semestre]..."
+        String mensajeFinal = "¡Hola, bienvenidos! Nosotros somos la pareja conformada por " + nombresYEdades + ". " + "Nuestros correos institucionales son " + correos + ".";
 
         System.out.println(mensajeFinal);
     }
