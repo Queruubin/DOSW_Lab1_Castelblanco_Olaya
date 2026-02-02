@@ -2,8 +2,8 @@
 
 
 ## Integrantes
-- Nombre completo 1  
-- Nombre completo 2  
+- Tomas Olaya Diaz  
+- Samuel Felipe Castelbalnco Tellez  
 
 
 ---
