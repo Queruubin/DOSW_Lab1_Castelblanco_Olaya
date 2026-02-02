@@ -12,13 +12,17 @@
 ## Retos completados
 
 
-### Reto 1: Configuración y creación de rama  
-**Evidencia:**  
-Captura de imagen  
+### Reto 1: Configuración y creación de rama 
+
+**Evidencia**
+![alt text](image.png)
 
 
 **Descripción:**  
-Breve explicación del proceso realizado para configurar el repositorio y crear una nueva rama.
+Se implementó una solución de **Programación Funcional** en Java para generar un saludo automatizado.
+* Se creó la clase interna `Estudiante` para modelar los datos (nombre, correo, edad, semestre).
+* Se utilizó la **API Stream** y expresiones **Lambda** (`.map()`, `.collect()`) para transformar y concatenar la información de la lista de estudiantes sin usar bucles tradicionales.
+* El resultado es una cadena de texto formateada dinámicamente según los requisitos del laboratorio.
 
 
 ---
