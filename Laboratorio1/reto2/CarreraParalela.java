@@ -22,7 +22,7 @@ public class CarreraParalela {
 
         System.out.println("El número mayor es: " + max + " y " + resultado);
 
-        // --- SOLUCIÓN ESTUDIANTE B (Modificada para buscar el MÍNIMO) ---
+        // --- SOLUCIÓN ESTUDIANTE B
         List<Integer> numeros = Arrays.asList(15, 2, 9, 21, 7, 3, 8, 4);
         System.out.println("\nListado de números: " + numeros);
         IntSummaryStatistics estadisticas = numeros.stream()
