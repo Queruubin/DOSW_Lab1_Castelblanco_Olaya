@@ -8,10 +8,11 @@ import java.util.function.BinaryOperator;
 public class CarreraParalela {
     public static void main(String[] args) {
 
-        // --- Ejemplo inicial (se deja igual) ---
         BinaryOperator<Integer> mayor = (a, b) -> a > b ? a : b;
 
-        Integer max = List.of(3, 8, 6, 2)
+        List<Integer> numeros1 = List.of(3, 8, 6, 2);
+
+        Integer max = numeros1
                 .stream()
                 .reduce(mayor)
                 .orElse(null);
@@ -20,12 +21,14 @@ public class CarreraParalela {
                 ? (max % 2 == 0 ? "es múltiplo de 2" : "no es múltiplo de 2")
                 : "no hay números en la lista";
 
-        System.out.println("El número mayor es: " + max + " y " + resultado);
+                String cantidadPar = numeros1.size() % 2 == 0
+                ? "La cantidad de datos es par"
+                : "La cantidad de datos es impar";
 
+        System.out.println("El número mayor es: " + max + ", " + resultado);
+        System.out.println(cantidadPar);
 
-        // ============================================================
-        // --- ZONA DE TRABAJO DEL RETO ---
-        // ============================================================
+        // --- SOLUCIÓN ESTUDIANTE B
         List<Integer> numeros = Arrays.asList(15, 2, 9, 21, 7, 3, 8, 4);
         System.out.println("\nListado de números: " + numeros);
 
