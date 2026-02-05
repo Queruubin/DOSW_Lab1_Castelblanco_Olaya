@@ -10,9 +10,17 @@ public class CarreraParalela {
 
         // Esta parte superior parece un ejemplo aparte, la dejo como estaba.
         BinaryOperator<Integer> mayor = (a, b) -> a > b ? a : b;
-        int max = List.of(3, 8, 6, 2).stream().reduce(mayor).orElse(null);
-        System.out.println("El número mayor (ejemplo): " + max);
 
+        Integer max = List.of(3, 8, 6, 2)
+                .stream()
+                .reduce(mayor)
+                .orElse(null);
+
+        String resultado = max != null
+                ? (max % 2 == 0 ? "es múltiplo de 2" : "no es múltiplo de 2")
+                : "no hay números en la lista";
+
+        System.out.println("El número mayor es: " + max + " y " + resultado);
 
         // --- SOLUCIÓN ESTUDIANTE B (Modificada para buscar el MÍNIMO) ---
         List<Integer> numeros = Arrays.asList(15, 2, 9, 21, 7, 3, 8, 4);
