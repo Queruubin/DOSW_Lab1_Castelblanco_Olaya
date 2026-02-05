@@ -1,4 +1,4 @@
-package Laboratorio1.reto2; // Asegúrate que este package sea el correcto según tu estructura de carpetas
+package Laboratorio1.reto2; // Asegúrate que este package sea el correcto
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
@@ -8,7 +8,7 @@ import java.util.function.BinaryOperator;
 public class CarreraParalela {
     public static void main(String[] args) {
 
-        // Esta parte superior parece un ejemplo aparte, la dejo como estaba.
+        // --- Ejemplo inicial (se deja igual) ---
         BinaryOperator<Integer> mayor = (a, b) -> a > b ? a : b;
 
         Integer max = List.of(3, 8, 6, 2)
@@ -22,13 +22,25 @@ public class CarreraParalela {
 
         System.out.println("El número mayor es: " + max + " y " + resultado);
 
-        // --- SOLUCIÓN ESTUDIANTE B
+
+        // ============================================================
+        // --- ZONA DE TRABAJO DEL RETO ---
+        // ============================================================
         List<Integer> numeros = Arrays.asList(15, 2, 9, 21, 7, 3, 8, 4);
         System.out.println("\nListado de números: " + numeros);
+
+        // Calculamos todas las estadísticas de una sola vez
         IntSummaryStatistics estadisticas = numeros.stream()
             .mapToInt(num -> num)
             .summaryStatistics();
-        System.out.println("--- Resultados Carril 1 (Estudiante B) ---");
+
+        System.out.println("--- Resultados (Estudiante B - Mínimo) ---");
         System.out.println("El número más pequeño es: " + estadisticas.getMin());
+
+        long cantidadTotal = estadisticas.getCount();
+        String esCantidadImpar = (cantidadTotal % 2 != 0) ? "Sí" : "No";
+
+        System.out.println("Cantidad total de datos: " + cantidadTotal);
+        System.out.println("¿La cantidad de datos es impar?: " + esCantidadImpar);
     }
 }
