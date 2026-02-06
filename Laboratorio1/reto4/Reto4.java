@@ -8,21 +8,20 @@ import java.util.stream.Stream;
 
 public class Reto4 {
   public static void main(String[] args) {
-    // Datos del Estudiante A (HashMap)
+    // Datos del Estudiante A
     Map<String, Integer> hm = new HashMap<>();
     hm.put("oro", 5);
     hm.put("plata", 3);
-    hm.put("oro", 7); // El reto dice ignorar duplicados en la entrada, pero al final pide combinar
+    hm.put("oro", 7);
     hm.put("diamante", 10);
 
-    // Datos del Estudiante B (Hashtable)
+    // Datos del Estudiante B
     Map<String, Integer> ht = new Hashtable<>();
     ht.put("plata", 8);
     ht.put("rubí", 4);
     ht.put("oro", 12);
     ht.put("esmeralda", 6);
 
-    // Ejecución de la solución final
     reclamarTesoro(hm, ht);
 }
 
