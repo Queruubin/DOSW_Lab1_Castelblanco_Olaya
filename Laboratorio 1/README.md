@@ -36,6 +36,52 @@ Breve explicación de cómo se realizó el trabajo colaborativo, cómo se integr
 ---
 
 
+
+### Reto 3: Commit colaborativo  
+**Evidencia:**  
+Captura de imagen  
+
+
+**Descripción:**  
+Breve explicación de cómo se realizó el trabajo colaborativo, cómo se integraron los cambios, y más detalles relevantes.
+
+
+---
+
+
+
+### Reto 4: Commit colaborativo  
+**Evidencia:**  
+Captura de imagen  
+
+
+**Descripción:**  
+Breve explicación de cómo se realizó el trabajo colaborativo, cómo se integraron los cambios, y más detalles relevantes.
+
+
+---
+
+
+
+### Reto 5: Commit colaborativo  
+**Evidencia:**  
+Captura de imagen  
+
+
+**Descripción:**  
+Breve explicación de cómo se realizó el trabajo colaborativo, cómo se integraron los cambios, y más detalles relevantes.
+
+
+---
+
+
+
+### Reto 6: Commit colaborativo  
+
+
+
+
+
 ## Preguntas teóricas
 
 
