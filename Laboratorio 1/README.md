@@ -1,64 +1,64 @@
-# [cite_start]#Maratón Git 2026-1 [cite: 44]
+# #Maratón Git 2026-1 [cite: 44]
 
-## [cite_start]## Integrantes [cite: 45]
-* [cite_start]**Nombre completo 1:** [Tu Nombre Aquí] [cite: 46]
-* [cite_start]**Nombre completo 2:** [Nombre de tu Compañero Aquí] [cite: 47]
+## ## Integrantes [cite: 45]
+* **Nombre completo 1:** [Tu Nombre Aquí] [cite: 46]
+* **Nombre completo 2:** [Nombre de tu Compañero Aquí] [cite: 47]
 
 ---
 
 ## ## Estrategia de Resolución de Conflictos
-[cite_start]Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron al intentar fusionar (**merge**) ramas donde ambos integrantes modificamos el mismo bloque de código o el mismo método[cite: 116, 240].
+Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron al intentar fusionar (**merge**) ramas donde ambos integrantes modificamos el mismo bloque de código o el mismo método[cite: 116, 240].
 
 **El proceso estándar para resolverlos fue:**
-1. [cite_start]**Detección:** Al ejecutar `git merge`, Git identificaba las líneas en conflicto[cite: 82, 116].
+1. **Detección:** Al ejecutar `git merge`, Git identificaba las líneas en conflicto[cite: 82, 116].
 2. **Limpieza:** Editamos el archivo manualmente para eliminar los marcadores de conflicto (`<<<<<<<`, `=======`, `>>>>>>>`).
-3. [cite_start]**Unificación:** Integramos la lógica de ambos (por ejemplo, combinando los comandos del Estudiante A y B en el Reto 6)[cite: 224, 225].
-4. [cite_start]**Sincronización:** En casos complejos, utilizamos `git stash` y `git stash pop` para mover cambios temporalmente y evitar sobrescrituras[cite: 117, 242].
+3. **Unificación:** Integramos la lógica de ambos (por ejemplo, combinando los comandos del Estudiante A y B en el Reto 6)[cite: 224, 225].
+4. **Sincronización:** En casos complejos, utilizamos `git stash` y `git stash pop` para mover cambios temporalmente y evitar sobrescrituras[cite: 117, 242].
 
 ---
 
-## [cite_start]## Retos completados [cite: 49]
+## ## Retos completados [cite: 49]
 
-### [cite_start]### Reto 1: Configuración y creación de rama [cite: 50, 64]
-[cite_start]**Descripción:** [cite: 53, 67]
-[cite_start]Configuramos el entorno local y el repositorio en GitHub[cite: 18, 20]. [cite_start]Implementamos un objeto `Estudiante` y una expresión lambda para imprimir un saludo de bienvenida procesando la lista con `stream()`, `map()` y `collect()`[cite: 88, 90, 92].
-
----
-
-### [cite_start]### Reto 2: Carrera en Paralelo [cite: 102]
-[cite_start]**Descripción:** [cite: 58]
-[cite_start]Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. [cite_start]Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios[cite: 115, 119, 120].
+### ### Reto 1: Configuración y creación de rama [cite: 50, 64]
+**Descripción:** [cite: 53, 67]
+Configuramos el entorno local y el repositorio en GitHub[cite: 18, 20]. Implementamos un objeto `Estudiante` y una expresión lambda para imprimir un saludo de bienvenida procesando la lista con `stream()`, `map()` y `collect()`[cite: 88, 90, 92].
 
 ---
 
-### [cite_start]### Reto 3: El eco misterioso [cite: 132]
+### ### Reto 2: Carrera en Paralelo [cite: 102]
+**Descripción:** [cite: 58]
+Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios[cite: 115, 119, 120].
+
+---
+
+### ### Reto 3: El eco misterioso [cite: 132]
 
 **Descripción:**
-[cite_start]Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas[cite: 142, 145]. [cite_start]Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`[cite: 147, 150].
+Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas[cite: 142, 145]. Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`[cite: 147, 150].
 
 ---
 
-### [cite_start]### Reto 4: El tesoro de las llaves duplicadas [cite: 152]
+### ### Reto 4: El tesoro de las llaves duplicadas [cite: 152]
 
 **Descripción:**
-[cite_start]Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. [cite_start]Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas[cite: 163, 167].
+Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas[cite: 163, 167].
 
 ---
 
-### [cite_start]### Reto 5: Batalla de Conjuntos [cite: 180]
+### ### Reto 5: Batalla de Conjuntos [cite: 180]
 
 **Descripción:**
-[cite_start]Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos[cite: 185, 186]. [cite_start]La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`[cite: 187, 190].
+Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos[cite: 185, 186]. La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`[cite: 187, 190].
 
 ---
-### [cite_start]### Reto 6: La máquina de decisiones [cite: 206]
+### ### Reto 6: La máquina de decisiones [cite: 206]
 
 **Descripción:**
-[cite_start]Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. [cite_start]Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
+Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
 
 ---
 ## Evidencias del git tree de como se hicieron los commits entre tomas y yo
-* ![Evidencia 1](pruebaTree2.png)
+* ![Evidencia 1](prubaTree2.png)
 * ![Evidencia 2](pruebaTree1.png)
 
 ## ## Preguntas teóricas
