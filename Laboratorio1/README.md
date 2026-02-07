@@ -30,6 +30,8 @@ Configuramos el entorno local y el repositorio en GitHub. Implementamos un objet
 **Descripción:**
 Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios[cite: 115, 119, 120].
 
+* ![Evidencia](reto2/image.png)
+
 ---
 
 ### ### Reto 3: El eco misterioso

@@ -1,4 +1,4 @@
-package Laboratorio1.reto2;
+package reto2;
 
 import java.util.IntSummaryStatistics;
 import java.util.List;
