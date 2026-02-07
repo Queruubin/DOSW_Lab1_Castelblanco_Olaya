@@ -39,6 +39,7 @@ Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Reso
 **Descripción:**
 Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas[cite: 142, 145]. Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`[cite: 147, 150].
 
+* ![Evidenica](reto3/image.png)
 ---
 
 ### ### Reto 4: El tesoro de las llaves duplicadas
@@ -46,6 +47,7 @@ Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para in
 **Descripción:**
 Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas[cite: 163, 167].
 
+* ![Evidencia](reto4/image.png)
 ---
 
 ### ### Reto 5: Batalla de Conjuntos
@@ -53,12 +55,13 @@ Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. 
 **Descripción:**
 Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos[cite: 185, 186]. La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`[cite: 187, 190].
 
+* ![Evidencia](reto5/image.png)
 ---
 ### ### Reto 6: La máquina de decisiones
 
 **Descripción:**
 Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
-![alt text](<Captura de pantalla 2026-02-06 215132.png>)
+![alt text](reto6/image.png)
 ---
 ## Evidencias del git tree de como se hicieron los commits entre tomas y yo
 * ![Evidencia 1](prubaTree2.png)
