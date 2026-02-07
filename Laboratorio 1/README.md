@@ -56,7 +56,7 @@ Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden 
 
 **Descripción:**
 Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
-
+![alt text](<Captura de pantalla 2026-02-06 215132.png>)
 ---
 ## Evidencias del git tree de como se hicieron los commits entre tomas y yo
 * ![Evidencia 1](prubaTree2.png)
