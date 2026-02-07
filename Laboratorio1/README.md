@@ -6,7 +6,7 @@
 
 ---
 
-## ## Estrategia de Resolución de Conflictos
+## Estrategia de Resolución de Conflictos
 Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron al intentar fusionar (**merge**) ramas donde ambos integrantes modificamos el mismo bloque de código o el mismo método.
 
 **El proceso estándar para resolverlos fue:**
@@ -17,57 +17,62 @@ Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron a
 
 ---
 
-## ## Retos completados
+## Retos completados
 
-### ### Reto 1: Configuración y creación de rama
+### Reto 1: Configuración y creación de rama
 **Descripción:**
 Configuramos el entorno local y el repositorio en GitHub. Implementamos un objeto `Estudiante` y una expresión lambda para imprimir un saludo de bienvenida procesando la lista con `stream()`, `map()` y `collect().
 * ![Evidencia](reto1/image.png)
 
 ---
 
-### ### Reto 2: Carrera en Paralelo
+### Reto 2: Carrera en Paralelo
 **Descripción:**
-Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios[cite: 115, 119, 120].
+Simulamos un flujo de trabajo paralelo usando subramas "carril". Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios.
 
 * ![Evidencia](reto2/image.png)
 
 ---
 
-### ### Reto 3: El eco misterioso
+### Reto 3: El eco misterioso
 
 **Descripción:**
-Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas[cite: 142, 145]. Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`[cite: 147, 150].
+Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas. Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`.
 
 * ![Evidenica](reto3/image.png)
 ---
 
-### ### Reto 4: El tesoro de las llaves duplicadas
+### Reto 4: El tesoro de las llaves duplicadas
 
 **Descripción:**
-Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas[cite: 163, 167].
+Implementamos la combinación de un `HashMap` y un `Hashtable`. Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas.
 
 * ![Evidencia](reto4/image.png)
 ---
 
-### ### Reto 5: Batalla de Conjuntos
+### Reto 5: Batalla de Conjuntos
 
 **Descripción:**
-Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos[cite: 185, 186]. La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`[cite: 187, 190].
+Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos. La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`.
 
 * ![Evidencia](reto5/image.png)
 ---
-### ### Reto 6: La máquina de decisiones
+### Reto 6: La máquina de decisiones
 
 **Descripción:**
-Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
+Creamos una máquina de comandos usando un `Map<String, Runnable>`. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución.
 ![alt text](reto6/image.png)
 ---
 ## Evidencias del git tree de como se hicieron los commits entre tomas y yo
 * ![Evidencia 1](prubaTree2.png)
 * ![Evidencia 2](pruebaTree1.png)
 
-## ## Preguntas teóricas
+## Alguanas evidencias de como se resolvian los conflictos por medio de VSCode
+
+* ![Evidencia1](rescon1.png)
+* ![Evidencia2](rescon2.png)
+
+## Preguntas teóricas
 
 1. **¿Cuál es la diferencia entre git merge y git rebase?**
    * *Respuesta:* `merge` une dos ramas creando un nuevo commit de fusión y mantiene el historial original; `rebase` mueve los commits a la punta de la rama destino para crear un historial lineal.
