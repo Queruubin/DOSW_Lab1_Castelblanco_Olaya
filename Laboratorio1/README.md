@@ -17,7 +17,7 @@ Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron a
 
 ---
 
-## ## Retos completados [cite: 49]
+## ## Retos completados
 
 ### ### Reto 1: Configuración y creación de rama
 **Descripción:**
@@ -32,27 +32,27 @@ Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Reso
 
 ---
 
-### ### Reto 3: El eco misterioso [cite: 132]
+### ### Reto 3: El eco misterioso
 
 **Descripción:**
 Utilizamos `StringBuilder` para repetición de mensajes y `StringBuffer` para inversión de cadenas[cite: 142, 145]. Unificamos ambos comportamientos en una sola función mediante lambdas y `stream()`[cite: 147, 150].
 
 ---
 
-### ### Reto 4: El tesoro de las llaves duplicadas [cite: 152]
+### ### Reto 4: El tesoro de las llaves duplicadas
 
 **Descripción:**
 Implementamos la combinación de un `HashMap` y un `Hashtable`[cite: 159, 160]. Resolvimos conflictos de llaves duplicadas priorizando el `Hashtable` y utilizamos `Collectors.toMap()` para ordenar y transformar las llaves a mayúsculas[cite: 163, 167].
 
 ---
 
-### ### Reto 5: Batalla de Conjuntos [cite: 180]
+### ### Reto 5: Batalla de Conjuntos
 
 **Descripción:**
 Filtramos números aleatorios en un `HashSet` (sin orden) y un `TreeSet` (orden natural) eliminando múltiplos específicos[cite: 185, 186]. La solución final unificó ambos conjuntos eliminando duplicados mediante `stream().filter()`[cite: 187, 190].
 
 ---
-### ### Reto 6: La máquina de decisiones [cite: 206]
+### ### Reto 6: La máquina de decisiones
 
 **Descripción:**
 Creamos una máquina de comandos usando un `Map<String, Runnable>`[cite: 228]. Cada integrante aportó un fragmento del manual, resultando en un conflicto al unificar el bloque `switch-case` y las lambdas de ejecución[cite: 224, 226].
