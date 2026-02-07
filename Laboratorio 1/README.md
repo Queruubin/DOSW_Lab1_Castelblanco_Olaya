@@ -1,32 +1,33 @@
-# #Maratón Git 2026-1 [cite: 44]
+### Maratón Git 2026-1
 
-## ## Integrantes [cite: 45]
-* **Nombre completo 1:** [Tu Nombre Aquí] [cite: 46]
-* **Nombre completo 2:** [Nombre de tu Compañero Aquí] [cite: 47]
+## Integrantes
+* **Nombre completo 1:** Samuel Felipe Castelblanco Tellez
+* **Nombre completo 2:** Tomas Olaya Diaz
 
 ---
 
 ## ## Estrategia de Resolución de Conflictos
-Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron al intentar fusionar (**merge**) ramas donde ambos integrantes modificamos el mismo bloque de código o el mismo método[cite: 116, 240].
+Durante el desarrollo del laboratorio, la mayoría de los conflictos surgieron al intentar fusionar (**merge**) ramas donde ambos integrantes modificamos el mismo bloque de código o el mismo método.
 
 **El proceso estándar para resolverlos fue:**
-1. **Detección:** Al ejecutar `git merge`, Git identificaba las líneas en conflicto[cite: 82, 116].
+1. **Detección:** Al ejecutar `git merge`, Git identificaba las líneas en conflicto.
 2. **Limpieza:** Editamos el archivo manualmente para eliminar los marcadores de conflicto (`<<<<<<<`, `=======`, `>>>>>>>`).
-3. **Unificación:** Integramos la lógica de ambos (por ejemplo, combinando los comandos del Estudiante A y B en el Reto 6)[cite: 224, 225].
-4. **Sincronización:** En casos complejos, utilizamos `git stash` y `git stash pop` para mover cambios temporalmente y evitar sobrescrituras[cite: 117, 242].
+3. **Unificación:** Integramos la lógica de ambos (por ejemplo, combinando los comandos del Estudiante A y B en el Reto 6).
+4. **Sincronización:** En casos complejos, utilizamos `git stash` y `git stash pop` para mover cambios temporalmente y evitar sobrescrituras.
 
 ---
 
 ## ## Retos completados [cite: 49]
 
-### ### Reto 1: Configuración y creación de rama [cite: 50, 64]
-**Descripción:** [cite: 53, 67]
-Configuramos el entorno local y el repositorio en GitHub[cite: 18, 20]. Implementamos un objeto `Estudiante` y una expresión lambda para imprimir un saludo de bienvenida procesando la lista con `stream()`, `map()` y `collect()`[cite: 88, 90, 92].
+### ### Reto 1: Configuración y creación de rama
+**Descripción:**
+Configuramos el entorno local y el repositorio en GitHub. Implementamos un objeto `Estudiante` y una expresión lambda para imprimir un saludo de bienvenida procesando la lista con `stream()`, `map()` y `collect().
+* ![Evidencia](reto1/image.png)
 
 ---
 
-### ### Reto 2: Carrera en Paralelo [cite: 102]
-**Descripción:** [cite: 58]
+### ### Reto 2: Carrera en Paralelo
+**Descripción:**
 Simulamos un flujo de trabajo paralelo usando subramas "carril"[cite: 104]. Resolvimos conflictos al integrar funciones que calculaban el máximo y mínimo de una lista, añadiendo validaciones con operadores ternarios[cite: 115, 119, 120].
 
 ---
